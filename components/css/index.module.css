@@ -1,0 +1,83 @@
+
+ .home-page {
+    padding-top: 180px;
+    height: 100%;
+    text-align: center;
+    color: black;
+    width: 100%;
+  } 
+  .myClass {
+    text-align: center;
+    color: black;
+    width: 100%;
+  }
+   .container-fluid::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    z-index: 0;
+  }  
+  .container-fluid > * {
+    z-index: 10;
+    position: relative;
+  }
+  .container-fluid {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 850px;
+    background-image: url(/static/bg.jpg);
+    background-size: cover;
+    text-align: center;
+    margin-top: 0px;
+  } 
+ .endWrapper {
+  display: flex;
+ } 
+ @media (max-width: 75em) {
+   .endWrapper {
+    display: none;
+   }
+ }
+ .middleWrapper {
+  max-width: 330px;
+  width: '100%';
+  margin-right: '10px';
+ }
+ @media (max-width: 38em) {
+  .middleWrapper {
+    display: none;
+  }
+ }
+ .imageWrapper {
+  width: '180px';
+ }
+ @media (max-width: 18.5em) {
+  .imageWrapper {
+    width: 150px;
+  }
+}
+ .normalNavbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+ }
+ .wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  box-sizing: border-box;
+  width: 100%;
+  height: 70px;
+  font-size: 15px;
+  background: #FFFFFF;
+  transition: background 300ms ease-out;
+  color: white;
+ }
